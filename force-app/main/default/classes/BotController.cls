@@ -1,3 +1,4 @@
+// I think Quantum Mechanics it's necessary not only for understand the Universe but also our own mind... SMS
 public with sharing class BotController {
 
     class HandlerMapping {
@@ -19,7 +20,7 @@ public with sharing class BotController {
         System.debug(commands);
         List<HandlerMapping> mappings = new List<HandlerMapping>();
         for (Bot_Command__c command : commands) {
-			mappings.add(new HandlerMapping(command.apex_class__c, command.pattern__c));
+            mappings.add(new HandlerMapping(command.apex_class__c, command.pattern__c));
         }
         handlerMappings = mappings;
     }
